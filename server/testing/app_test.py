@@ -92,7 +92,7 @@ class TestApp:
             m = Message.query.first()
             id = m.id
             body = m.body
-
+    
             app.test_client().patch(
                 f'/messages/{id}',
                 json={
